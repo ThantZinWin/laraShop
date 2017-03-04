@@ -8,6 +8,7 @@ use App\Models\Product;
 use Input;
 use App\Http\Requests\SendEmailMessageContactRequest;
 use Mail;
+use App\Models\Brand;
 
 /**
  * Class FrontendController
@@ -29,9 +30,10 @@ class FrontendController extends Controller
 
 
 		$products =Product::where('category_id', 3)->take(4)->get();
+		$brands = Brand::all()->take(3);
 		
 		return view('frontend.index')
-		->with(array('products'=>$products));
+		->with(array('products'=>$products,'brands'=>$brands));
 	}
 	public function products(){
 		// $categories = Category::where('parent_id',0)->get();
@@ -125,5 +127,7 @@ class FrontendController extends Controller
 
 		return view('frontend.services.services');
 	}
+
+
 	
 }

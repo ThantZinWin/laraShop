@@ -14,9 +14,9 @@ use Image;
 class CategoryController extends Controller
 {
 	public function index(){
-		$categories = Category::paginate(10);
+		$categorieslist = Category::paginate(10);
 
-		return view('backend.categories.index')->with(array("categories"=>$categories));
+		return view('backend.categories.index')->with(array("categorieslist"=>$categorieslist));
 	}
 
 	public function create(){

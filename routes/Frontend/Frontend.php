@@ -16,6 +16,7 @@ Route::get('/shoppingcart','CartController@index')->name('shoppingcart');
 Route::get('/addtocart/{id}','CartController@add')->name('addtocart');
 Route::get('/product_details/{id}','FrontendController@product_details')
 ->name('product_details');
+Route::get('/brands','FrontendController@brands')->name('brands');
 
 
 /**

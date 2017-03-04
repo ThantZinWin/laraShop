@@ -284,7 +284,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 <div class="clearfix"> </div>
             </div>
             <div class="wthree_footer_copy">
-                <p>© 2016 Grocery Store. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+                <p>© 2017 LaraShop. All rights reserved | powered by <a href="mailto:thantzin.mya@gmail.com" target="_blank">T.Z</a></p>
             </div>
         </div>
     </div>

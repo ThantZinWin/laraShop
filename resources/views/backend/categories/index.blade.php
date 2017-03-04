@@ -34,16 +34,16 @@
                         </tr>
                     </thead>
                     <tbody>
-                        @foreach($categories as $category)
+                        @foreach($categorieslist as $categorylist)
                         <tr>
-                            <td>{{$category->id}}</td>
-                            <td>{{$category->title}}</td>
-                            <td><img src="{{url('/images/90x60/categories/'.$category->icon_image) }}"/></td>
-                            <td>{{$category->parent_id}}</td>
-                            <td>{{$category->created_at}}</td>
+                            <td>{{$categorylist->id}}</td>
+                            <td>{{$categorylist->title}}</td>
+                            <td><img src="{{url('/images/90x60/categories/'.$categorylist->icon_image) }}"/></td>
+                            <td>{{$categorylist->parent_id}}</td>
+                            <td>{{$categorylist->created_at}}</td>
                             <td>
-                                {!! Form::open(["route"=>["admin.categories.destroy",$category->id],"method"=>"Delete"] ); !!}
-                                <a href="{{ route('admin.categories.edit', $category->id) }}" class="btn btn-info btn-xs">Edit</a>
+                                {!! Form::open(["route"=>["admin.categories.destroy",$categorylist->id],"method"=>"Delete"] ); !!}
+                                <a href="{{ route('admin.categories.edit', $categorylist->id) }}" class="btn btn-info btn-xs">Edit</a>
                                 
                                 <button class="btn btn-danger btn-xs">Delete</button>
                                 {!! Form::close() !!}
@@ -55,7 +55,7 @@
             </div><!--table-responsive-->
         </div><!-- /.box-body -->
     </div><!--box-->
-{{$categories->links()}}
+{{$categorieslist->links()}}
     
 @stop
 

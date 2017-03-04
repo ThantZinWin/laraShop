@@ -16,7 +16,7 @@
 					</ul>
 					<ul>
 						<li><i class="fa fa-phone" aria-hidden="true"></i></li>
-						<li>call to us<span>(+95) 9 259128739</br>(+95) 9 773 689 56</span></li>
+						<li>call to us<span>(+95) 9 259128739</br>(+95) 9 773 6890 56</span></li>
 					</ul>
 				</div>
 				<div class="col-md-8 agileinfo_mail_grid_right">

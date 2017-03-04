@@ -53,7 +53,9 @@
                     </div>
                     <div class="col-lg-10">
                         <!-- {{ Form::select('associated-permissions', array('all' => trans('labels.general.all'), 'custom' => trans('labels.general.custom')), 'all', ['class' => 'form-control']) }} -->
-                        <input type="text" name="description" id="description" class="form-control" placeholder="Description">
+                        <textarea type="text" name="description" id="description" class="tinymce form-control" placeholder="Description">
+                            
+                        </textarea> 
                     </div><!--col-lg-3-->
                 </div><!--form control-->
 

@@ -52,7 +52,7 @@
                     </div>
                     <div class="col-lg-10">
                         <!-- {{ Form::select('associated-permissions', array('all' => trans('labels.general.all'), 'custom' => trans('labels.general.custom')), 'all', ['class' => 'form-control']) }} -->
-                        {{ Form::text('description', $page->description, ['class' => 'form-control']) }}
+                        {{ Form::textarea('description', $page->description, ['class' => 'form-control tinymce']) }}
                     </div><!--col-lg-3-->
                 </div><!--form control-->
             </div><!-- /.box-body -->

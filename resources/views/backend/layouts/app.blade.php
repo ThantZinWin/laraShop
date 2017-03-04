@@ -40,6 +40,9 @@
                 'csrfToken' => csrf_token(),
             ]); ?>
         </script>
+
+ 
+
     </head>
     <body class="skin-{{ config('backend.theme') }} {{ config('backend.layout') }}">
         @include('includes.partials.logged-in-as')
@@ -71,6 +74,10 @@
         <!-- JavaScripts -->
         @yield('before-scripts')
         {{ Html::script(elixir('js/backend.js')) }}
+
+               <script src="//cloud.tinymce.com/stable/tinymce.min.js"></script>
+        <script>tinymce.init({ selector:'textarea' });</script>
         @yield('after-scripts')
+
     </body>
 </html>

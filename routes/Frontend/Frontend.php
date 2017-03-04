@@ -7,16 +7,19 @@
 Route::get('/', 'FrontendController@index')->name('index');
 Route::get('macros', 'FrontendController@macros')->name('macros');
 Route::get('/products','FrontendController@products')->name('products');
-Route::get('/about','FrontendController@about')->name('about');
+/*Route::get('/about','FrontendController@about')->name('about');
+Route::get('/faqs','FrontendController@faqs')->name('faqs');
+Route::get('/services','FrontendController@services')->name('services');*/
 Route::get('/contact','FrontendController@contact')->name('contact');
 Route::post('/send_message','FrontendController@send_message')->name('send_message');
-Route::get('/faqs','FrontendController@faqs')->name('faqs');
-Route::get('/services','FrontendController@services')->name('services');
+
 Route::get('/shoppingcart','CartController@index')->name('shoppingcart');
 Route::get('/addtocart/{id}','CartController@add')->name('addtocart');
 Route::get('/product_details/{id}','FrontendController@product_details')
 ->name('product_details');
 Route::get('/brands','FrontendController@brands')->name('brands');
+
+Route::get('/pages/{slug}','PageController@index')->name('page');
 
 
 /**

@@ -144,8 +144,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             </div>
             <div class="w3ls_logo_products_left1">
                 <ul class="special_items">
-                    <li><a href="{{ route('frontend.about') }}">About Us</a><i>/</i></li>
-                    <li><a href="{{ route('frontend.services') }}">Services</a><i>/</i></li>
+                    <li><a href="{{ route('frontend.page','about') }}">About Us</a><i>/</i></li>
+                    <li><a href="{{ route('frontend.page','services') }}">Services</a><i>/</i></li>
                     <li><a href="{{ route('frontend.contact') }}">Contact Us</a></li>
                 </ul>
             </div>
@@ -165,7 +165,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
             <ul>
                 <li><i class="fa fa-home" aria-hidden="true"></i><a href="{{ route('frontend.index') }}">Home</a><span>|</span></li>
                 <li><a href="{{ route('frontend.products') }}">Products</a><span>|</span></li>
-                <li><a href="{{ route('frontend.faqs') }}"> FAQ's</a></li>
+                <li><a href="{{ route('frontend.page','faqs') }}"> FAQ's</a></li>
             </ul>
         </div>
     </div>

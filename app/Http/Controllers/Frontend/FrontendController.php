@@ -88,10 +88,10 @@ class FrontendController extends Controller
 		->with(array("product"=>$product));
 	}
 
-	public function about(){
+	// public function about(){
 
-		return view('frontend.about.index');
-	}
+	// 	return view('frontend.about.index');
+	// }
 
 	public function contact(){
 		// $categories = Category::where('parent_id',0)->get();
@@ -116,17 +116,17 @@ class FrontendController extends Controller
 
 
 
-	public function faqs(){
-		// $categories = Category::where('parent_id',0)->get();
+	// public function faqs(){
+	// 	// $categories = Category::where('parent_id',0)->get();
 
-		return view('frontend.faqs.faqs');
-	}
+	// 	return view('frontend.faqs.faqs');
+	// }
 
-	public function services(){
-		// $categories = Category::where('parent_id',0)->get();
+	// public function services(){
+	// 	// $categories = Category::where('parent_id',0)->get();
 
-		return view('frontend.services.services');
-	}
+	// 	return view('frontend.services.services');
+	// }
 
 
 	
